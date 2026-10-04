@@ -1,4 +1,4 @@
-#Laboratory No.1: The Landing Page, Author: Mark John A. Rabago
+#Laboratory No.1: Installment 1: The Landing Page, Author: Mark John A. Rabago
 
 print("=" * 40)
 print("            EXPENSE TRACKER")

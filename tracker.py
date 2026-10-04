@@ -1,0 +1,18 @@
+#Laboratory No.1: The Landing Page, Author: Mark John A. Rabago
+
+print("=" * 40)
+print("            EXPENSE TRACKER")
+print("       Know where your money goes.")
+print("=" * 40)
+print("")
+print("Welcome! This is your personal expense tracker.")
+print("")
+print("MAIN MENU")
+print("  [1] Add an expense            (coming soon)")
+print("  [2] View all expenses         (coming soon)")
+print("  [3] Show total spent          (coming soon)")
+print("  [4] Exit                      (coming soon)")
+print("")
+print("-" * 40)
+print("Made by: Mark John A. Rabago | Intallment 1")
+print("=" * 40)

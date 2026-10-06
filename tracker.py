@@ -1,5 +1,4 @@
-#Laboratory No.2 : Installment 2: Talking to the User, Author: Mark John A. Rabago
-
+#Laboratory No.3 : Installment 3: The Tracker Does Math, Author: Mark John A. Rabago
 print("=" * 40)
 print("            EXPENSE TRACKER")
 print("       Know where your money goes.")
@@ -17,12 +16,21 @@ firstExpense = input("First expense: ")
 amount1 = float(input("Amount of first expense: "))
 secondExpense = input("Second expense: ")
 amount2 = float(input("Amount of second expense: "))
+Taxrate = float(input("Tax rate %? "))
+budget = float(input("Budget: "))
 print("")
 print("-" * 40)
 print("SUMMARY")
 print(f"  - {firstExpense}:\t${amount1:.2f}")
 print(f"  - {secondExpense}:\t${amount2:.2f}")
-print(f"Total spent:\t${amount1 + amount2:.2f}")
-print(f"Average:\t${(amount1 + amount2) / 2:.2f}")
+Subtotal = 0 + amount1 + amount2
+print(f"Subtotal:\t${Subtotal:.2f}")
+print(f"Average:\t${Subtotal / 2:.2f}")
+print(f"Tax({Taxrate}%):\t${Subtotal * (Taxrate / 100):.2f}")
+grandTotal = Subtotal + (Subtotal * (Taxrate / 100))
+print(f"Grand Total:\t${grandTotal:.2f}")
+overbudget = grandTotal > budget
+print(f"Over budget?\t{overbudget}")
+print(f"Left in budget: ${budget - grandTotal:.2f}")
 print("-" * 40)
-print("Made by: Mark John A. Rabago | Installment 2")
+print("Made by: Mark John A. Rabago | Installment 3")
